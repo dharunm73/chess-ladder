@@ -1,17 +1,29 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmp0re70833k7"]
+[gd_scene load_steps=6 format=4 uid="uid://cmp0re70833k7"]
 
-[ext_resource type="Texture2D" uid="uid://dr1yhii2lnc25" path="res://asset/pawn_white.png" id="1_1b0et"]
-[ext_resource type="Script" uid="uid://bsxnj4pvprvh3" path="res://pawn.gd" id="2_2s20u"]
+[ext_resource type="Texture2D" uid="uid://d313yyxmnxr21" path="res://asset/blackbg.png" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://cms6ggxvc1ieq" path="res://asset/whitebg.png" id="4_lquwl"]
 
-[sub_resource type="TileSet" id="TileSet_0xm2m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7mycd"]
+texture = ExtResource("3_1bvp3")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_272bh"]
+texture = ExtResource("4_lquwl")
+0:0/0 = 0
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_5vw27"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_7mycd")
+sources/1 = SubResource("TileSetAtlasSource_272bh")
 
 [node name="main" type="Node2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(20, 40)
-scale = Vector2(0.5, 0.59375)
-texture = ExtResource("1_1b0et")
-script = ExtResource("2_2s20u")
-
-[node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_set = SubResource("TileSet_0xm2m")
+[node name="board" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAABAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAHAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAEAAAAAAAAAAAAEAAEAAAAAAAAAAAAGAAEAAAAAAAAAAAABAAIAAAAAAAAAAAAFAAIAAAAAAAAAAAAHAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAACAAMAAAAAAAAAAAAEAAMAAAAAAAAAAAAGAAMAAAAAAAAAAAABAAQAAAAAAAAAAAADAAQAAAAAAAAAAAAFAAQAAAAAAAAAAAAHAAQAAAAAAAAAAAAAAAUAAAAAAAAAAAACAAUAAAAAAAAAAAAEAAUAAAAAAAAAAAAGAAUAAAAAAAAAAAABAAYAAAAAAAAAAAADAAYAAAAAAAAAAAAFAAYAAAAAAAAAAAAHAAYAAAAAAAAAAAAAAAcAAAAAAAAAAAACAAcAAAAAAAAAAAAEAAcAAAAAAAAAAAAGAAcAAAAAAAAAAAABAAEAAQAAAAAAAAACAAIAAQAAAAAAAAADAAMAAQAAAAAAAAAEAAQAAQAAAAAAAAAFAAUAAQAAAAAAAAAGAAYAAQAAAAAAAAAHAAcAAQAAAAAAAAACAAAAAQAAAAAAAAADAAEAAQAAAAAAAAAEAAIAAQAAAAAAAAAFAAMAAQAAAAAAAAAGAAQAAQAAAAAAAAAHAAUAAQAAAAAAAAAEAAAAAQAAAAAAAAAFAAEAAQAAAAAAAAAGAAIAAQAAAAAAAAAHAAMAAQAAAAAAAAAGAAAAAQAAAAAAAAAHAAEAAQAAAAAAAAAAAAIAAQAAAAAAAAABAAMAAQAAAAAAAAACAAQAAQAAAAAAAAADAAUAAQAAAAAAAAAEAAYAAQAAAAAAAAAFAAcAAQAAAAAAAAAAAAQAAQAAAAAAAAABAAUAAQAAAAAAAAACAAYAAQAAAAAAAAADAAcAAQAAAAAAAAAAAAYAAQAAAAAAAAABAAcAAQAAAAAAAAADAAIAAAABAAEAAAAAAAAAAQAAAAAAAAA=")
+tile_set = SubResource("TileSet_5vw27")
