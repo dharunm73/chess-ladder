@@ -1,9 +1,12 @@
-extends CharacterBody2D
+extends Node
 
 func _ready() -> void:
-	input_pickable = true
+	pass
 	
-func _input_event(V) -> void
+func _input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == event and  and event.pressed:
+			
 	
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	pass
