@@ -47,7 +47,7 @@ tile_map_data = PackedByteArray("AAADAAAAAgAAAAAAAAAFAAAAAgAAAAAAAAAHAAAAAgAAAAA
 tile_set = SubResource("TileSet_5vw27")
 
 [node name="Blackknight1" type="CharacterBody2D" parent="board"]
-position = Vector2(23.333334, 8.333333)
+position = Vector2(23.666668, 24.333334)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -63,7 +63,7 @@ hframes = 6
 vframes = 2
 
 [node name="Blackknight2" type="CharacterBody2D" parent="board"]
-position = Vector2(103.666664, 8.333333)
+position = Vector2(103.666664, 8.666666)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -78,7 +78,7 @@ hframes = 6
 vframes = 2
 
 [node name="Whiteknight1" type="CharacterBody2D" parent="board"]
-position = Vector2(21.999998, 120.666664)
+position = Vector2(23.666668, 120)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -94,7 +94,7 @@ vframes = 2
 frame = 6
 
 [node name="Whiteknight2" type="CharacterBody2D" parent="board"]
-position = Vector2(103.333336, 119.99999)
+position = Vector2(103.66667, 120)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -110,7 +110,7 @@ vframes = 2
 frame = 6
 
 [node name="BlackRook1" type="CharacterBody2D" parent="board"]
-position = Vector2(6.3333335, 8.333334)
+position = Vector2(7.3333335, 8.333333)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -126,7 +126,7 @@ vframes = 2
 frame = 4
 
 [node name="BlackRook2" type="CharacterBody2D" parent="board"]
-position = Vector2(120, 8.666668)
+position = Vector2(120, 8.666667)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -142,7 +142,7 @@ vframes = 2
 frame = 4
 
 [node name="WhiteRook1" type="CharacterBody2D" parent="board"]
-position = Vector2(7.6666565, 120)
+position = Vector2(7.6666665, 120)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -158,7 +158,7 @@ vframes = 2
 frame = 10
 
 [node name="WhiteRook2" type="CharacterBody2D" parent="board"]
-position = Vector2(118.333336, 121.66667)
+position = Vector2(120, 120)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
@@ -174,7 +174,7 @@ vframes = 2
 frame = 10
 
 [node name="BlackPawn" type="CharacterBody2D" parent="board"]
-position = Vector2(7.333334, 24.333332)
+position = Vector2(7.6666665, 24.333332)
 scale = Vector2(0.5, 0.5)
 input_pickable = true
 motion_mode = 1
